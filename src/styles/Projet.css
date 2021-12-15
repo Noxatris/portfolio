@@ -1,0 +1,37 @@
+.conteneur_projet{
+    display: none;
+    width: 90%;
+}
+
+.liste_projet{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.btn_liste_projet{
+    width: 10%;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.btn_projet{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(38, 38, 38, 0.8);
+    border-radius: 45px;
+}
+
+.projet{
+    background-color: rgba(38, 38, 38, 0.8);
+    width: 30%;
+    height: 450px;
+}

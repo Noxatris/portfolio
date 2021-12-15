@@ -1,0 +1,44 @@
+.conteneur_competence{
+    display: none;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteneur_langage{
+    background-color: rgba(38, 38, 38, 0.6);
+    border-radius: 25px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.conteneur_langage h2{
+    align-self: center;
+}
+
+.conteneur_langage h2, .conteneur_langage h3{
+    color: #35F131;
+}
+
+.conteneur_langage p{
+    color: white
+}
+
+@media screen and (min-width: 1025px) {
+    .conteneur_competence{
+        width: 90vw;
+        height: 90vh;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .conteneur_langage{
+        width: 45%;
+        height: 90%;
+    }
+}

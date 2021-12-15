@@ -1,0 +1,122 @@
+.conteneur_global{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    animation: superRotateStyle 3s ease-in-out;
+    background-color: rgba(38, 38, 38, 0.9);
+    overflow: hidden;
+    z-index: 10;
+}
+
+@keyframes superRotateStyle {
+    0%{
+        transform: rotate(410deg)
+    }
+
+    100%{
+
+    }
+}
+/*------------------------------------------------------------------------------------
+                                Menu redirection
+------------------------------------------------------------------------------------*/
+@keyframes rotateMenu{
+    0%{
+        transform: rotate3d(2, -1, -1, 1turn)
+    }
+    100%{
+    }
+}
+
+@keyframes translateRed{
+    0%{
+        transform: translateY(-200px)
+    }
+    100%{
+        transform: translateY(0, 0, 0)
+    }
+}
+
+@keyframes translateGreen{
+    0%{
+        transform: translateX(150px)
+    }
+    100%{
+        transform: translateX(0, 0, 0)
+    }
+}
+
+@keyframes translateBlue{
+    0%{
+        transform: translateY(150px)
+    }
+    100%{
+        transform: translateY(0, 0, 0)
+    }
+}
+
+
+.conteneur_bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(57, 57, 57);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.conteneur_bouton label{
+    cursor: pointer;
+}
+
+.conteneur_bouton input{
+    appearance: none;
+    margin: 0;
+}
+
+
+#icone_profile{
+    animation: rotateMenu 3s 0.2s ease-in-out, btnPulse 2s 0.5s infinite, translateRed 3s ease-in-out ;
+}
+
+#icone_competence{
+    animation: rotateMenu 3s ease-in-out, btnPulse 2s 0.5s infinite, translateGreen 3s ease-in-out ;  
+}
+
+
+
+#icone_projet{
+    animation: rotateMenu 3s 0.4s ease-in-out, btnPulse 2s 0.5s infinite, translateBlue 3s ease-in-out ;
+}
+
+
+@keyframes btnPulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(53, 241, 49, 0.7);
+    }
+
+    50%{
+        box-shadow: 0 0 0 5px rgba(53, 241, 49, 0);
+    }
+
+    100%{
+        box-shadow: 0 0 0 0 rgba(53, 241, 49, 0);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .conteneur_global{
+        flex-direction: column;
+        width: 10vw;
+        height: 90vh;
+    }
+
+
+}
